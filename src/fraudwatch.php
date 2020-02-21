@@ -1,17 +1,17 @@
 <?php 
-	/**
-	 * VER: 1.0.0 (Updated: 02/21/2020)
-	 *
-	 * Prerequisites: PHP7 (tested 02/21/2020)
-	 * Maintainers: Brandon Elliott
-	 *
-	 *	For the latest documentation and best practices: please visit https://api.optguard.com/doc
-	 */
-	define('ACCESS_KEY', '');
+    /**
+     * VER: 1.0.0 (Updated: 02/21/2020)
+     *
+     * Prerequisites: PHP7 (tested 02/21/2020)
+     * Maintainers: Brandon Elliott
+     *
+     *	For the latest documentation and best practices: please visit https://api.optguard.com/doc
+     */
+    define('ACCESS_KEY', '');
     define('SECRET_KEY', '');
     define('API_REVISION', 'v1'); // Which API revision?
 	
-	/************************************************************************
+    /************************************************************************
     |	Usage: Enter your access and secret keys, from your optGuard        |
     |          account dashboard, into the fields above.                    |
     |                                                                       |
@@ -25,13 +25,13 @@
     |    in the <HEAD> of all pages, to trigger the PHP script.             |
     |                                                                       |
     |   <script defer src="https://[domain.tld]/fraudwatch.php"></script>   |
-	|				    												    |
-	************************************************************************/	
+    |				    												    |
+    ************************************************************************/	
 
-	/******************************************** 
-	*	!! DO NOT CHANGE BELOW THIS LINE !!		*
-	*	...unless you know what you are doing	*
-	********************************************/	
+    /******************************************** 
+    |	!! DO NOT CHANGE BELOW THIS LINE !!		|
+    |	...unless you know what you are doing	|
+    ********************************************/	
     
     define('VER', '1.0.0');	// allows us to identify known bugs and version control; DONT touch!
     define('PROTOCOL', 'https://');	// Probably shouldn't touch! ;)
