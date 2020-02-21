@@ -42,6 +42,7 @@
     $aArgs['ip'] = $referrer['ip'];
     $aArgs['access_key'] = ACCESS_KEY;
     $aArgs['secret_key'] = SECRET_KEY;
+    $aArgs['ver'] = VER;
 
     $sResp = _fileGetContent( PROTOCOL.'api.optguard.com/'.API_REVISION.'/check?', $aArgs);
     // $sResp = _fileGetContent( 'http://localhost:3000/'.API_REVISION.'/check?', $aArgs); // For optGuard local DEV testing ;)
