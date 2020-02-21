@@ -25,12 +25,12 @@
     |    in the <HEAD> of all pages, to trigger the PHP script.             |
     |                                                                       |
     |   <script defer src="https://[domain.tld]/fraudwatch.php"></script>   |
-    |				    												    |
+    |                                                                       |
     ************************************************************************/	
 
     /******************************************** 
-    |	!! DO NOT CHANGE BELOW THIS LINE !!		|
-    |	...unless you know what you are doing	|
+    |	!! DO NOT CHANGE BELOW THIS LINE !!     |
+    |	...unless you know what you are doing   |
     ********************************************/	
     
     define('VER', '1.0.0');	// allows us to identify known bugs and version control; DONT touch!
