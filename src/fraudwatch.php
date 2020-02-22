@@ -71,8 +71,9 @@
 			$sResult = curl_exec($rConnect);
 			curl_close($rConnect);
 		}
-		else
-			$sResult = @file_get_contents($sUrl . http_build_query($aArgs, '', '&'));
+		else {
+            $sResult = @file_get_contents($sUrl . http_build_query($aArgs, '', '&'));
+        }
 
 		return $sResult;
     }
@@ -90,6 +91,6 @@
         elseif ( !empty($server['HTTP_HOST']) ) {$referrer = $server['HTTP_HOST'];} 	// if they are on OUR site (or directly accessing this script)
         else { $referrer=$vip; }
 
-        return array('ip'=>$ip, 'referrer'=>$referrer);
+        return array('ip'=>$vip, 'referrer'=>$referrer);
     }
 ?>
